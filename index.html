@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Van Gogh's description</title>
-    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
     <!-- import the webpage's stylesheet -->
     <link rel="stylesheet" href="/style.css">
     
@@ -14,7 +15,10 @@
     <script src="/script.js" defer></script>
   </head>  
   <body>
-    <h1>Welcome! This is a website that is dedicated to Vincent Van Gogh</h1>
+    <h1>Welcome to the home page! This is a website that is dedicated to Vincent Van Gogh</h1>
+    
+    <a href="/csstest2.html">Go to CSS test 2</a>
+    <a href="#section2">Go to Section 2</a>
     <p>
       Vincent Willem van Gogh 30 March 1853 – 29 July 1890) was a Dutch post-impressionist painter who is amongst<br>
       the most famous and influential figures in the history of Western art. In just over a decade, he created about 2,100 artworks,<br>
@@ -23,34 +27,43 @@
       to the foundations of modern art. He was not commercially successful, and his suicide at 37 came after years of mental illness, <br>
       depression and poverty.
     </p>
+    <div class="vincent trueimage">
     <img src="https://cdn.glitch.com/f42af0a4-1968-4f8b-bb6c-590b84c22513%2FVincent_van_Gogh_-_Self-Portrait_-_Google_Art_Project_(454045).jpg?v=1604546735828" width="350">
+    </div>
     
+    <div class="description box onecol">
     <p>
-      On the right side
+     Born into an upper-middle-class family, Van Gogh drew as a child and was serious, quiet, and thoughtful. As a young man he worked as an art dealer, 
+      often travelling, but became depressed after he was transferred to London. He turned to religion and spent time as a Protestant missionary in southern Belgium.
+      He drifted in ill health and solitude before taking up painting in 1881, having moved back home with his parents. His younger brother Theo supported him financially,
+      and the two kept a long correspondence by letter. His early works, mostly still lifes and depictions of peasant labourers, contain few signs of the vivid colour that 
+      distinguished his later work. In 1886, he moved to Paris, where he met members of the avant-garde, including Émile Bernard and Paul Gauguin, who were reacting against 
+      the Impressionist sensibility. As his work developed he created a new approach to still lifes and local landscapes. His paintings grew brighter in colour as he developed
+      a style that became fully realised during his stay in Arles in the south of France in 1888. During this period he broadened his subject matter to include series of olive trees, 
+      wheat fields and sunflowers.
     </p>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris auctor in urna vitae accumsan.<br>
-      Ut posuere vitae tellus eu elementum. Donec at convallis ligula. Curabitur eget placerat nisi. Nunc<br>
-      a tortor ut sem ultrices sodales a a purus. Aenean ac turpis at arcu semper rhoncus. Curabitur id sodales<br>
-      purus, vitae pharetra quam. Mauris quis pellentesque ipsum. Etiam at ipsum sed augue scelerisque viverra. Sed<br>
-      id posuere quam. Cras non orci nunc. Nulla diam purus, gravida et dolor at, bibendum egestas eros. Integer eu<br>
-      gravida nulla. Pellentesque maximus eros metus, sed aliquam leo commodo nec. Suspendisse eget consectetur turpis.<br> In sed sagittis orci, sed ornare magna.
-    </p>
-     <table style="width:100%">
+   </div>
+  
+    <h2 id="section2">Section 2</h2>
+    <table style="width:100%">
+      <caption>
   <tr>
     
     <th colspan="3" style="text-align:center">Links to other pages</th>
   </tr>
   <tr>
-    <td><a href="page2.html">go to page 2</a></td>
-    <td><a href="page3.html">go to page 3</a></td>
-    <td><a href="page4.html">go to page 4</a></td>
+    <td><a href="page2.html">famous paintings</a></td>
+    <td><a href="page3.html">history</a></td>
+    <td><a href="page4.html">legacy</a></td>
   </tr>
+      </caption>
 </table>
 
+    
     <!-- include the Glitch button to show what the webpage is about and
           to make it easier for folks to view source and remix -->
     <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
     <script src="https://button.glitch.me/button.js" defer></script>
+ 
   </body>
 </html>

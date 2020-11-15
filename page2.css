@@ -6,7 +6,7 @@ body {
   background-color:black;
   color:beige;
   text-align:left;
-  background-image:;
+  background-image:url("https://cdn.glitch.com/f42af0a4-1968-4f8b-bb6c-590b84c22513%2Fanders-jilden-uwbajDCODj4-unsplash.jpg?v=1605150596772");
   background-size: auto;
   background-repeat: no-repeat;
 }
@@ -16,26 +16,20 @@ h1 {
   font-family: Overpass;
   color: #ADFF2F;
   text-align:center;
-  background-image:url("https://cdn.glitch.com/f42af0a4-1968-4f8b-bb6c-590b84c22513%2Fjorg-angeli-CAMwIxYk5Xg-unsplash.jpg?v=1605446314491");
-  background-size: 1500px;
-  padding:180px;
-  margin:0px;
-  background-repeat: no-repeat;
 }
 
 
 img {
   display: block;
   margin-left: auto;
-  margin-right: manual;
+  margin-right: auto;
   
 }
 .vincent {
   display:block;
   margin-left:auto;
   margin-right:auto;
-  padding:0px;
-  
+  padding:50px;
 }
 
 table, th, td {
@@ -50,7 +44,7 @@ table, th, td {
 }
 
 .box {
-  float: right;
+  float: left;
   width: 33.33%;
   padding: 50px;
   height: 300px;
@@ -144,13 +138,5 @@ a:active {
 /*for boxes that link to other pages*/
 .linkcodes{
   text-align:center;
-  
-}
-/*for images*/
-.trueimage {
-  border: 0px solid red;
-  border-radius: 4px;
-  padding: 0px;
-  width: 0px;
   
 }
