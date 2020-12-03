@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+  <head>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,11 +10,28 @@
     
     <!-- import the webpage's stylesheet -->
     <link rel="stylesheet" href="/style.css">
-    <link rel="stylesheet" href="/page4.css">
-<style>
-  
+    <link rel="stylesheet" href="/famouspaintings.css">
     
-body {
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>  
+  <body>
+    
+    
+    
+
+    <!-- include the Glitch button to show what the webpage is about and
+          to make it easier for folks to view source and remix -->
+    <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
+    <script src="https://button.glitch.me/button.js" defer></script>
+  </body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+  body {
   font-size: 28px;
 }
 
@@ -54,14 +71,15 @@ li a:hover {
 </head>
 <body>
 
-<h3>This is page 4 where some filler stuff which idk what it is yet will be added inside</h3>
+<h3>This webpage will focus on some of Van Gogh's most famous works</h3>
 
 <ul>
-  <li><a href="index.html">Home</a></li>
-  <li><a href="famouspaintings.html">famous paintings</a></li> 
+  <li><a href="index.html">Home page</a></li>
+  <li><a class="active" href="#famous paintings">famous paintings</a></li> 
   <li><a href="Legacy.html">Legacy of the artist</a></li>
-  <li><a class="active" href="#Page 4">Page 4</a></li>
+  <li><a href="page4.html">Page 4</a></li>
 </ul>
+  
 
 
 <p>The navbar will <strong>stick</strong> to the top when you reach its scroll position.</p>
