@@ -4,5 +4,39 @@ h3{
   text-align:center;
 }
 p{
-  font-family:'Architects Daughter', cursive;
+  font-family:'Raleway', sans-serif;
+}
+img {
+  float: ;
+  border: 2px solid black;
+  margin: 2px 10px 10px 20px;
+}
+.imgright {
+  float:right;
+  font-family:font-family:'Raleway', sans-serif;  
+  
+}
+.imgleft{
+  float:left;
+  font-family:font-family:'Raleway', sans-serif;  
+}
+.zoom {
+  padding: 30px;
+  background-color: ;
+  transition: transform .2s;
+  width: px;
+  height: px;
+  margin: 2 auto;
+}
+.zoom:hover {
+  transform: scale(1.10); 
+}
+.ml2 {
+  font-weight: 900;
+  font-size: 70px;
+}
+
+.ml2 .letter {
+  display: inline-block;
+  line-height: 1em;
 }

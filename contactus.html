@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Famous paintings</title>
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/contactus.css">
+  <script src="/script.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+<style>
+  
+    
+body {
+  font-size: 28px;
+  font-family:'Raleway', sans-serif;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #2F4F4F;
+  position: sticky ;
+  top: 0;
+  
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: beige;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: 'Raleway', sans-serif;
+  
+}
+
+li a:hover:after {
+  background-color: magenta;
+  width:100%
+}
+li a::after{
+    content:'';
+    position:absoloute;
+    display:block;
+    height:4px;
+    width:0%;
+    background-color:white;
+    transition:all ease-in-out 250ms;
+  }    
+
+.active {
+  background-color: teal;
+}
+</style>
+</head>
+<body>
+
+<h1 class="ml2" style="color:black">This is the contact us page</h1>
+  <h4 style="text-align:center ; font-family:'Raleway', sans-serif">If you have any enquiries, feel free to contact us here!</h4>
+
+<ul>
+  <li><a href="index.html">Home page</a></li>
+  <li><a href="famouspaintings.html">famous paintings</a></li> 
+  <li><a href="Legacy.html">Legacy of the artist</a></li>
+  <li><a class="active" href="#Page 4">Contact Us</a></li>
+</ul>
+  <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="https://cdn.glitch.com/b6dd32fe-7796-4b4f-b420-5fff9a958383%2FWebcoding%201.png?v=1608121122754" alt="Avatar" style="width:400px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <img src="https://cdn.glitch.com/b6dd32fe-7796-4b4f-b420-5fff9a958383%2FWhatsApp%20Image%202020-11-21%20at%2015.19.33.jpeg?v=1608115513135" width="200px" height="150px" style="float:left;margin-left:10px;margin-top:75px">
+      <p style="font-size:15px;top-margin:70px">I am</p>
+      <h3> Toh Wei Jun</h3>
+      <p style="font-size:15px">Currently a year One student studying in NYP SIDM Interaction Design(IXD)</p> 
+      
+    </div>
+  </div>
+</div>
+  <div class="flip-card">
+  <div class="flip-card-inner">
+     
+    <div class="flip-card-front">
+      
+      <img src="https://cdn.glitch.com/b6dd32fe-7796-4b4f-b420-5fff9a958383%2FWebcoding%202.png?v=1608121613393" alt="Avatar" style="width:400px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h2>Address</h2> 
+      <p style="font-size:15px">You can find me at Nanyang Poly Blk N1 Floor 5 room N1.508</p> 
+      <p style="font-size:15px">Nanyang Poly Location: 180 Ang Mo Kio Ave 8, Singapore 569830</p> 
+    </div>
+  </div>
+</div>
+  <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="https://cdn.glitch.com/b6dd32fe-7796-4b4f-b420-5fff9a958383%2FWebcoding%203.png?v=1608121145010" alt="Avatar" style="width:400px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h2>Further Enquiries</h2> 
+      <p style="font-size:20px">For further enquiries,You can directly contact my number at +65 89442952 or email me at laserbean101@gmail.com</p> 
+    
+    </div>
+  </div>
+</div>
+  
+<h3 style="">Contact Form</h3>
+
+<div class="container">
+  <form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    
+     <input type="text" id="county" name="country" placeholder="Country">
+    
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+    
+    <input type="submit" value="Submit">
+    
+  </form>
+</div>
+
+</body>
+</html>

@@ -3,15 +3,23 @@
 <head> 
   <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" href="/Legacy.css">
+   <link rel="stylesheet" href="/index.css">
+   <script src="/script.js" defer></script>
+     <script src="/script.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+  
 <style>
 body {
   font-size: 28px;
+  background-color:grey;
+  background-image:url(https://cdn.glitch.com/b6dd32fe-7796-4b4f-b420-5fff9a958383%2Fimages.jpg?v=1608126635620);
+  background-size:cover;
 }
 
 ul {
@@ -19,7 +27,7 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: black;
+  background-color: #2F4F4F;
   position: sticky ;
   top: 0;
   
@@ -38,34 +46,285 @@ li a {
   font-family: 'Raleway',sans-serif;
   
 }
+  li a::after{
+    content:'';
+    position:absoloute;
+    display:block;
+    height:4px;
+    width:0%;
+    background-color:white;
+    transition:all ease-in-out 250ms;
+  }    
 
-li a:hover {
-  background-color: pink;
+li a:hover:after {
+  background-color: magenta;
+  width:100%;
 }
 
 .active {
-  background-color: #4CAF50;
+  background-color: teal;
 }
+
+  
+  
 </style>
 </head>
 <body>
 
-<h3>This page will describe Van Gogh's legacy over his life and his achievements</h3>
+<h3 class="ml2">This page will describe Van Gogh's legacy over his life and his achievements</h3>
 
 <ul>
-  <li><a href="index.html">Home</a></li>
+  <li><a href="index.html">Home page</a></li>
   <li><a href="famouspaintings.html">famous paintings</a></li> 
   <li><a class="active" href="#Legacy of the artist">Legacy of the artist</a></li>
-  <li><a href="page4.html">Page 4</a></li>
+  <li><a href="contactus.html">Contact Us</a></li>
 </ul>
-
-  <p>Largely on the basis of the works of the last three years of his life, van Gogh is generally considered one of the greatest Dutch painters of all time.
+  <h2>Main legacy</h2>
+  <hr>
+  <img src="https://cdn.glitch.com/b6dd32fe-7796-4b4f-b420-5fff9a958383%2FSelf-Portrait-canvas-Vincent-van-Gogh-National-Gallery-1889.jpg?v=1606964647226" width="300" height="450" style="float:right ; margin-left:20px">
+  <p>
+  Largely on the basis of the works of the last three years of his life, van Gogh is generally considered one of the greatest Dutch painters of all time.
     His work exerted a powerful influence on the development of much modern painting, in particular on the works of the Fauve painters, Chaim Soutine, and the
     German Expressionists. Yet of the more than 800 oil paintings and 700 drawings that constitute his life’s work, he sold only one in his lifetime. Always 
     desperately poor, he was sustained by his faith in the urgency of what he had to communicate and by the generosity of Theo, who believed in him implicitly. 
     The letters that he wrote to Theo from 1872 onward, and to other friends, give such a vivid account of his aims and beliefs, his hopes and disappointments,
     and his fluctuating physical and mental state that they form a unique and touching biographical record that is also a great human document.</p>
-
-
-</body>
+  <p>
+    The name of van Gogh was virtually unknown when he killed himself: only one article about him had appeared during his lifetime. He had exhibited 
+    a few canvases at the Salon des Indépendants in Paris between 1888 and 1890 and in Brussels in 1890; both salons showed small commemorative groups
+    of his work in 1891. One-man shows of his work did not occur until 1892.
+  </p>
+  <p>
+    Van Gogh’s fame dates from the early years of the 20th century, and since then his reputation has never ceased to grow. A large part of this reputation is
+    based on the image of van Gogh as a struggling genius, working unappreciated in isolation. The dramatic elements of his life—poverty, self-mutilation, mental
+    breakdown, and suicide—feed the drama of this mythology. The notion that his unorthodox talent was unrecognized and rejected by society heightens the legend,
+    as it is just that sort of isolation and struggle that has come to define the modern concept of the artist. This mythical van Gogh has become almost inseparable
+    from his art, inspiring artists to dramatize his saga in poems, novels, films, operas, dance ensembles, orchestral compositions, and a popular song. Wide and 
+    diverse audiences have come to appreciate his art, and the record-breaking attendance at exhibitions of his works—as well as the popularity of commercial items
+    featuring imagery from his oeuvre—reveal that, within the span of a century, van Gogh has become perhaps the most recognized painter of all time. The unprecedented
+    prices his works have attained through auction and the attention paid to forgery scandals have only increased van Gogh’s stature in the public imagination.
+  </p>
+  <div class="clearfix"></div>
+   
+  <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front" style="margin:-20px">
+      <img src="https://cdn.glitch.com/b6dd32fe-7796-4b4f-b420-5fff9a958383%2FVan-Gogh-Museum-Amsterdam.jpg?v=1607570451571" alt="Avatar" style="width:450px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h2>The Van Gogh Museum</h2> 
+      <p style="font-size:10px">The Van Gogh Museum is a Dutch art museum dedicated to the works of Vincent van Gogh and his contemporaries in the Museum Square
+        in Amsterdam South, close to the Stedelijk Museum, the Rijksmuseum, and the Concertgebouw.[7] The museum opened on 2 June 1973,[2] and its buildings were
+        designed by Gerrit Rietveld and Kisho Kurokawa.
+The museum contains the largest collection of Van Gogh's paintings and drawings in the world. In 2017, the museum had 2.3 million visitors and was the most-visited
+        museum in the Netherlands, and the 23rd-most-visited art museum in the world. In 2019, the Van Gogh Museum launched the Meet Vincent Van Gogh Experience,
+        a technology-driven "immersive exhibition" on Van Gogh's life and works, which has toured globally.</p> 
+      
+    </div>
+  </div>
+</div>
+   <h3>Hover over the image on the left to find out more!</h3>
+     
+  <p>
+    Because the most sensational events of van Gogh’s life—the conflicts with Gauguin, the mutilation of his left ear, and the suicide—are thinly documented and layered 
+    with apocrypha and anecdote, there is a trend in van Gogh studies to penetrate the layers of myth by reconstructing the known facts of the artist’s life. This scholarly 
+    analysis has taken many forms. Medical and psychological experts have examined contemporary descriptions of his symptoms and their prescribed treatments in an attempt to
+    diagnose van Gogh’s condition (theories suggest epilepsy, schizophrenia, or both). Other scholars have studied evidence of his interaction with colleagues, neighbours, 
+    and relatives and have meticulously examined the sites where van Gogh worked and the locales where he lived. In light of van Gogh’s continually increasing popularity, 
+    scholars have even deconstructed the mythologizing process itself. These investigations shed greater light on the artist and his art and also offer further proof that,
+    more than a century after his death, van Gogh’s extraordinary appeal continues to endure and expand.
+  </p>  
+<div class="clearfix"></div>
+  <hr>
+  <h2>Early life</h2>
+  <p>
+    Van Gogh, the eldest of six children of a Protestant pastor, was born and reared in a small village in the Brabant region of the southern Netherlands.
+    He was a quiet, self-contained youth, spending his free time wandering the countryside to observe nature. At 16 he was apprenticed to The Hague branch
+    of the art dealers Goupil and Co., of which his uncle was a partner.
+  </p>
+  <div class="zoom"><img src="https://cdn.glitch.com/b6dd32fe-7796-4b4f-b420-5fff9a958383%2F412099-The-Starry-Night-(1889)-by-Vincent-van-Gogh-adult-coloring-page.jpg?v=1607959370987" width="450",height="300" style="float:right"></div>
+  <p>
+    Van Gogh worked for Goupil in London from 1873 to May 1875 and in Paris from that date until April 1876. Daily contact with works of art aroused his 
+    artistic sensibility, and he soon formed a taste for Rembrandt, Frans Hals, and other Dutch masters, although his preference was for two contemporary
+    French painters, Jean-François Millet and Camille Corot, whose influence was to last throughout his life. Van Gogh disliked art dealing. Moreover, his 
+    approach to life darkened when his love was rejected by a London girl in 1874. His burning desire for human affection thwarted, he became increasingly
+    solitary. He worked as a language teacher and lay preacher in England and, in 1877, worked for a bookseller in Dordrecht, Netherlands. Impelled by a 
+    longing to serve humanity, he envisaged entering the ministry and took up theology; however, he abandoned this project in 1878 for short-term training 
+    as an evangelist in Brussels. A conflict with authority ensued when he disputed the orthodox doctrinal approach. Failing to get an appointment after 
+    three months, he left to do missionary work among the impoverished population of the Borinage, a coal-mining region in southwestern Belgium. There, 
+    in the winter of 1879–80, he experienced the first great spiritual crisis of his life. Living among the poor, he gave away all his worldly goods 
+    in an impassioned moment; he was thereupon dismissed by church authorities for a too-literal interpretation of Christian teaching.
+  </p>
+ 
+  <p>
+    Penniless and feeling that his faith was destroyed, he sank into despair and withdrew from everyone. “They think I’m a madman,”
+    he told an acquaintance, “because I wanted to be a true Christian. They turned me out like a dog, saying that I was causing a scandal.”
+    It was then that van Gogh began to draw seriously, thereby discovering in 1880 his true vocation as an artist. Van Gogh decided that his 
+    mission from then on would be to bring consolation to humanity through art. “I want to give the wretched a brotherly message,” he explained 
+    to his brother Theo. “When I sign [my paintings] ‘Vincent,’ it is as one of them.” This realization of his creative powers restored his self-confidence.
+  </p>
+  <div class="clearfix"></div>
+  <hr>
+  <h2>The productive decade</h2>
+  <hr>
+  <h3>The beginning of the decade</h3>
+  <p id="beginning">
+    His artistic career was extremely short, lasting only the 10 years from 1880 to 1890. During the first four years of this period, 
+    while acquiring technical proficiency, he confined himself almost entirely to drawings and watercolours. First, he went to study drawing
+    at the Brussels Academy; in 1881 he moved to his father’s parsonage at Etten, Netherlands, and began to work from nature.
+  </p>
+   <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front" style="margin:-20px">
+      <img src="https://cdn.glitch.com/b6dd32fe-7796-4b4f-b420-5fff9a958383%2FOld-Tower-canvas-oil-cardboard-Fields-Vincent-1884.jpg?v=1607960251869" alt="Avatar" style="width:450px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h2>The old tower in the fields</h2> 
+      <p style="font-size:10px"></p> 
+      
+    </div>
+  </div>
+</div>
+  <h3>1881-1885</h3>
+  <p id="1881-1885">
+    Van Gogh worked hard and methodically but soon perceived the difficulty of self-training and the need to seek the guidance of more experienced artists.
+    Late in 1881 he settled at The Hague to work with a Dutch landscape painter, Anton Mauve. He visited museums and met with other painters. Van Gogh thus 
+    extended his technical knowledge and experimented with oil paint in the summer of 1882. In 1883 the urge to be “alone with nature” and with peasants took
+    him to Drenthe, an isolated part of the northern Netherlands frequented by Mauve and other Dutch artists, where he spent three months before returning home,
+    which was then at Nuenen, another village in the Brabant. He remained at Nuenen during most of 1884 and 1885, and during these years his art grew bolder 
+    and more assured. He painted three types of subjects—still life, landscape, and figure—all interrelated by their reference to the daily life of peasants, 
+    to the hardships they endured, and to the countryside they cultivated. Émile Zola’s Germinal (1885), a novel about the coal-mining region of France, 
+    greatly impressed van Gogh, and sociological criticism is implicit in many of his pictures from this period—e.g., Weavers and <a href="famouspaintings.html">The Potato Eaters.</a>
+    Eventually, however, he felt too isolated in Nuenen.
+  </p>
+  <p>
+    His understanding of the possibilities of painting was evolving rapidly; from studying Hals he learned to portray the freshness 
+    of a visual impression, while the works of Paolo Veronese and Eugène Delacroix taught him that colour can express something by itself.
+    This led to his enthusiasm for Peter Paul Rubens and inspired his sudden departure for Antwerp, Belgium, where the greatest number of 
+    Rubens’s works could be seen. The revelation of Rubens’s mode of direct notation and of his ability to express a mood by a combination 
+    of colours proved decisive in the development of van Gogh’s style. Simultaneously, van Gogh discovered Japanese prints and Impressionist painting. 
+    All these sources influenced him more than the academic principles taught at the Antwerp Academy, where he was enrolled. His refusal to follow
+    the academy’s dictates led to disputes, and after three months he left precipitately in 1886 to join Theo in Paris. There, still concerned with 
+    improving his drawing, van Gogh met Henri de Toulouse-Lautrec, Paul Gauguin, and others who were to play historic roles in modern art. 
+    They opened his eyes to the latest developments in French painting.At the same time, Theo introduced him to Camille Pissarro, Georges 
+    Seurat, and other artists of the Impressionist group.
+  </p>
+  <h3> 1886-1888 </h3>
+  <p id="1886-1888">
+    By this time van Gogh was ready for such lessons, and the changes that his painting underwent in Paris between the spring of 1886 
+    and February 1888 led to the creation of his personal idiom and style of brushwork. His palette at last became colourful, his vision
+    less traditional, and his tonalities lighter, as may be seen in his first paintings of Montmartre. By the summer of 1887 he was painting
+    in pure colours and using broken brushwork that is at times pointillistic. Finally, by the beginning of 1888, van Gogh’s Post-Impressionist
+    style had crystallized, resulting in such masterpieces as Portrait of Père Tanguy and Self-Portrait in Front of the Easel, as well as in
+    some landscapes of the Parisian suburbs.
+  </p> 
+  <div class="flip-card">
+  <div class="flip-card-inner" >
+    <div class="flip-card-front" style="margin:10px">
+      <img src="https://cdn.glitch.com/b6dd32fe-7796-4b4f-b420-5fff9a958383%2FSelf-Portrait-Vincent-van-Gogh-Rijksmuseum-Amsterdam-1887.jpg?v=1607961095419" alt="Avatar" style="width:200px;height:280px;">
+    </div>
+    <div class="flip-card-back">
+      <h2>Self-Portrait, oil painting by Vincent van Gogh, 1887; in the Rijksmuseum, Amsterdam.</h2> 
+      <p style="font-size:10px"></p> 
+      
+    </div>
+  </div>
+</div>
+  
+  <p>
+    After two years van Gogh was tired of city life, physically exhausted, and longing “to look at nature under a brighter sky.”
+    His passion was now for “a full effect of colour.” He left Paris in February 1888 for Arles, in southeastern France.
+  </p>
+  <p>
+    The pictures he created over the following 12 months—depicting blossoming fruit trees, views of the town and surroundings, 
+    self-portraits, portraits of Roulin the postman and other friends, interiors and exteriors of the house, sunflowers,
+    and landscapes—marked his first great period. In these works he strove to respect the external, visual aspect of a figure
+    or landscape but found himself unable to suppress his own feelings about the subject, which found expression in emphatic
+    contours and heightened effects of colour. Once hesitant to diverge from the traditional techniques of painting he worked 
+    so hard to master, he now gave free rein to his individuality and began squeezing his tubes of oil paint directly on the
+    canvas. Van Gogh’s style was spontaneous and instinctive, for he worked with great speed and intensity, determined to 
+    capture an effect or a mood while it possessed him. “When anyone says that such and such [painting] is done too quickly,”
+    he told his brother, “you can reply that they have looked at it too fast.”
+  </p>
+  <h3>The Incident with Gauguin</h3>
+  <p id="incident">
+    Disaster struck on Christmas Eve, 1888. Physically and emotionally exhausted, van Gogh snapped under the strain. 
+    He argued with Gauguin and, reportedly, chased him with a razor and cut off the lower half of his own left ear.
+    A sensational news story reported that a deranged van Gogh then visited a brothel near his home and delivered the 
+    bloody body part to a woman named Rachel, telling her, “Guard this object carefully.” The 21st-century art historians
+    Hans Kaufmann and Rita Wildegans, however, examined contemporary police records and the artists’ correspondence and 
+    concluded, in Van Gogh’s Ohr: Paul Gaugin und der Pakt des Schweigens (2008; “Van Gogh’s Ear: Paul Gauguin and the
+    Pact of Silence”), that it was actually Gauguin who mutilated van Gogh’s ear and that he did so with a sword. Whatever 
+    transpired, van Gogh took responsibility and was hospitalized; Gauguin left for Paris.
+  </p>
+  <h3>The mutilation of his ear</h3>
+  <iframe width="900" height="500" style="display:block;margin:auto" src="https://www.youtube.com/embed/vG0kni2li8c" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <h3>Sent to asylum</h3>
+    
+  
+  <p id="asylum">
+    Van Gogh returned home a fortnight later and resumed painting, producing a mirror-image Self-Portrait with Bandaged Ear and Pipe,
+    several still lifes, and La Berceuse (Woman Rocking a Cradle; Augustine-Alix Pellicot Roulin, 1851–1930). Several weeks later,
+    he again showed symptoms of mental disturbance severe enough to cause him to be sent back to the hospital. At the end of April 1889,
+    fearful of losing his renewed capacity for work, which he regarded as a guarantee of his sanity, he asked to be temporarily shut u
+    p in the asylum at Saint-Rémy-de-Provence in order to be under medical supervision.
+  </p>
+  
+  <div class="flip-card">
+  <div class="flip-card-inner" >
+    <div class="flip-card-front" style="margin:10px">
+      <img src="https://cdn.glitch.com/b6dd32fe-7796-4b4f-b420-5fff9a958383%2FPortrait-Joseph-Roulin-oil-canvas-France-Arles-1889.jpg?v=1608042422094" alt="Avatar" style="width:200px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h2>Vincent van Gogh: Portrait of Joseph Roulin</h2> 
+      <p style="font-size:17px">Portrait of Joseph Roulin, oil on canvas by Vincent van Gogh, Arles, France, early 1889; in the Museum of Modern Art, New York City</p>
+      <p style="font-size:10px"></p> 
+      
+    </div>
+  </div>
+</div>
+   <p>
+  Van Gogh stayed there for 12 months, haunted by recurrent attacks, alternating between moods of calm and despair, and working intermittently: 
+    The Starry Night, Garden of the Asylum, Cypresses, Olive Trees, Les Alpilles, portraits of doctors, and interpretations of paintings by Rembrandt,
+    Delacroix, and Millet date from this period. The keynote of this phase (1889–90) is fear of losing touch with reality, as well as a certain sadness.
+    Confined for long periods to his cell or the asylum garden, having no choice of subjects, and realizing that his inspiration depended on direct
+    observation, van Gogh fought against having to work from memory. At Saint-Rémy he muted the vivid, sun-drenched colours of the previous summer 
+    and tried to make his painting more calm. As he repressed his excitement, however, he involved himself more imaginatively in the drama of the
+    elements, developing a style based on dynamic forms and a vigorous use of line (he often equated line with colour). The best of his Saint-Rémy p
+    ictures are thus bolder and more visionary than those of Arles.
+  </p>
+  
+  <h3>On the right:Vincent van Gogh: Bouquet of Flowers in a Vase</h3>
+  <div class="zoom"><img src="https://cdn.glitch.com/b6dd32fe-7796-4b4f-b420-5fff9a958383%2FBouquet-Flowers-oil-Vase-canvas-Vincent-van.jpg?v=1608043715093" width="400",height="550" style="float:right; margin-left:30px"></div>
+   <p>
+  Van Gogh himself brought this period to an end. Oppressed by homesickness—he painted souvenirs of Holland—and loneliness, 
+    he longed to see Theo and the north once more and arrived in Paris in May 1890. Four days later he went to stay with a homeopathic 
+    doctor-artist, Paul-Ferdinand Gachet, a friend of Pissarro and Paul Cézanne, at Auvers-sur-Oise. Back in a village community such 
+    as he had not known since Nuenen, four years earlier, van Gogh worked at first enthusiastically; his choice of subjects such as fields 
+    of corn, the river valley, peasants’ cottages, the church, and the town hall reflects his spiritual relief. A modification of his style
+    followed: the natural forms in his paintings became less contorted, and in the northern light he adopted cooler, fresh tonalities.
+    His brushwork became broader and more expressive and his vision of nature more lyrical. Everything in these pictures seems to be
+    moving, living. This phase was short, however, and ended in quarrels with Gachet and feelings of guilt at his financial dependence
+    on Theo (now married and with a son) and his inability to succeed.
+  </p>
+  <p>
+    In despair of ever being able to overcome his loneliness or be cured, van Gogh shot himself. He did not die immediately.
+    When found wounded in his bed, he allegedly said, “I shot myself.…I only hope I haven’t botched it.” That evening, when interrogated
+    by the police, van Gogh refused to answer questions, saying, “What I have done is nobody else’s business. I am free to do what I like with my own body.”
+  </p>
+  <p>
+    
+    Van Gogh died two days later. Theo, his own health broken, died six months later (January 25, 1891). In 1914 Theo’s remains were moved to his brother’s
+    grave site, in a little cemetery in Auvers, where today the two brothers lie side by side, with identical tombstones.
+  </p>
+  
+  <hr>
+  <h2>
+Credits    
+  </h2>
+  <h3>All the sources of information is obtained from <a href="https://www.britannica.com/biography/Vincent-van-Gogh">this site</a></h3>
+  <div class="clearfix"></div>
+  
+  
+  </body>
 </html>

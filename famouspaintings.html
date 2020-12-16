@@ -11,20 +11,13 @@
     <!-- import the webpage's stylesheet -->
     <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" href="/famouspaintings.css">
-    
+     <script src="/script.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <!-- import the webpage's javascript file -->
     <script src="/script.js" defer></script>
   </head>  
-  <body>
-    
-    
-    
 
-    <!-- include the Glitch button to show what the webpage is about and
-          to make it easier for folks to view source and remix -->
-    <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
-    <script src="https://button.glitch.me/button.js" defer></script>
-  </body>
 </html>
 <!DOCTYPE html>
 <html>
@@ -33,6 +26,7 @@
 
   body {
   font-size: 28px;
+  font-family:'Raleway', sans-serif;  
 }
 
 ul {
@@ -40,7 +34,7 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: black;
+  background-color: #2F4F4F;
   position: sticky ;
   top: 0;
   
@@ -59,38 +53,542 @@ li a {
   font-family: 'Raleway', sans-serif;
   
 }
+li a::after{
+    content:'';
+    position:absoloute;
+    display:block;
+    height:4px;
+    width:0%;
+    background-color:white;
+    transition:all ease-in-out 250ms;
+  }    
 
-li a:hover {
-  background-color: pink;
+li a:hover::after {
+  background-color: magenta;
+  width:100%;
 }
-
 .active {
-  background-color: #4CAF50;
+  background-color: teal;
 }
+
 </style>
 </head>
-<body>
 
-<h3>This webpage will focus on some of Van Gogh's most famous works</h3>
+
+<h1 class="ml2">This webpage will focus on some of Van Gogh's most famous works</h1>
 
 <ul>
   <li><a href="index.html">Home page</a></li>
   <li><a class="active" href="#famous paintings">famous paintings</a></li> 
   <li><a href="Legacy.html">Legacy of the artist</a></li>
-  <li><a href="page4.html">Page 4</a></li>
+  <li><a href="contactus.html">Contact Us</a></li>
 </ul>
   
 
+  <h3 class="ml9">This is a gallery of some of Van Gogh's famous paintings</h3>
+  <body>
+  <hr>
+ <div class="clearfix">
+  <h2>Gallery of his famous works</h2>
+   <div class="box blackbox threecol zoom">
+     <p>The Starry Nights</p>
+  <img src="https://cdn.glitch.com/b6dd32fe-7796-4b4f-b420-5fff9a958383%2Fstarry_night_full.jpg?v=1607768577320" width="100%" height="97%" >
+     <a href="#starrynights">More info</a>
+  </div>
+  <div class="box blackbox threecol zoom">
+    <p>Sunflowers</p>
+    <img src="https://cdn.glitch.com/b6dd32fe-7796-4b4f-b420-5fff9a958383%2Fsunflower_full.jpg?v=1607773395285" width="100%" height="150%">
+    <a href="#sunflowers">More info</a>
+  </div>
+  <div class="box blackbox threecol zoom">
+    <p>The Potato Eaters</p>
+    <img src="https://cdn.glitch.com/b6dd32fe-7796-4b4f-b420-5fff9a958383%2Fpotato_full.jpg?v=1607768587013" width="100%" height="97%">
+   <a href="#potatoeaters">More info</a>
+  </div>
+</div>
+<div class="box blackbox threecol zoom">
+  <p>Poppies</p>
+  <img src="https://cdn.glitch.com/b6dd32fe-7796-4b4f-b420-5fff9a958383%2Fpoppies_full.jpeg?v=1607768587032" width="100%" height="97%">
+      <a href="#poppies">More info</a>
+  </div>
+  <div class="box blackbox threecol zoom">
+    <p>Irises</p>
+    <img src="https://cdn.glitch.com/b6dd32fe-7796-4b4f-b420-5fff9a958383%2Firises_full.jpeg?v=1607768602022" width="100%" height="97%">
+    <a href="#Irises">More info</a>
+  </div>
+  <div class="box blackbox threecol zoom">
+    <p>The Bedroom</p>
+    <img src="https://cdn.glitch.com/b6dd32fe-7796-4b4f-b420-5fff9a958383%2Fbedroom_full.jpeg?v=1607768571601" width="100%" height="97%">
+    <a href="#bedroom">More info</a>
+  </div>
+<div class="box blackbox threecol zoom">
+  <p>Blossoming Almond Tree</p>
+  <img src="https://cdn.glitch.com/b6dd32fe-7796-4b4f-b420-5fff9a958383%2Fblossom_full.jpeg?v=1607768604654" width="100%" height="97%">
+  <a href="#almond">More info</a>
+  </div>
+  <div class="box blackbox threecol zoom">
+    <p>The Mulberry Tree</p>
+    <img src="https://cdn.glitch.com/b6dd32fe-7796-4b4f-b420-5fff9a958383%2Fmulberry_full.jpg?v=1607785303395" width="100%" height="97%">
+    <a href="#mulberry">More info</a>
+  </div>
+  <div class="box blackbox threecol zoom">
+    <p>The Night Cafe</p>
+    <img src="https://cdn.glitch.com/b6dd32fe-7796-4b4f-b420-5fff9a958383%2Fcafe_full.jpeg?v=1607768598852" width="100%" height="97%">
+    <a href="#nightcafe">More info</a>
+  </div>
+<div class="clearfix"></div>
+<hr>
+<h6 id="starrynights">The starry nights</h6>
+<h2>The starry nights</h2>
 
-<p>The navbar will <strong>stick</strong> to the top when you reach its scroll position.</p>
-<p><strong>Note:</strong> Internet Explorer do not support sticky positioning and Safari requires a -webkit- prefix.</p>
-<p>Some text to enable scrolling. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-<p>Some text to enable scrolling. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-<p>Some text to enable scrolling. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-<p>Some text to enable scrolling. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-<p>Some text to enable scrolling. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-<p>Some text to enable scrolling. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-<p>Some text to enable scrolling. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+  <p><div class="zoom"><img src="https://cdn.glitch.com/b6dd32fe-7796-4b4f-b420-5fff9a958383%2Fstarry_night_full.jpg?v=1607768577320" width="600" height="450" style="float:left; margin-right:20px;border:2px solid black;"></div>
+<h3>Description</h3>
+  Starry Night is one of the <b>most recognized pieces of art in the world</b>. It is absolutely everywhere, too. It can be seen on coffee, mugs,
+  t-shirts, towels, magnets, etc. Honestly, it sometimes feels as if the painting’s fame has exceeded that of its creator. It is a magnificent
+  piece of art. That Starry Night resonates with so many people is a testament to how its beauty is timeless and universal.
+</p>
+<h3>The story of starry nights</h3>
+<p>
+Vincent van Gogh painted Starry Night in 1889 during his stay at the asylum of Saint-Paul-de-Mausole near Saint-Rémy-de-Provence.
+  Van Gogh lived well in the hospital; he was allowed more freedoms than any of the other patients. If attended, he could leave the
+  hospital grounds; he was allowed to paint, read, and withdraw into his own room. He was even given a studio. While he suffered from
+  the occasional relapse into paranoia and fits - officially he had been diagnosed with epileptic fits - it seemed his mental health was recovering.
+Unfortunately, he relapsed. He began to suffer hallucination and have thoughts of suicide as he plunged into depression. Accordingly, 
+  there was a tonal shift in his work. He returned to incorporating the darker colors from the beginning of his career and Starry Night 
+  is a wonderful example of that shift. Blue dominates the painting, blending hills into the sky. The little village lays at the base in
+  the painting in browns, greys, and blues. Even though each building is clearly outlined in black, the yellow and white of the stars and 
+  the moon stand out against the sky, drawing the eyes to the sky. They are the big attention grabber of the painting.
+</p>
+<h3>The work</h3>
+<p>
+Notice the brush strokes. For the sky they swirl, each dab of color rolling with the clouds around the stars and moon. 
+  On the cypress tree they bend with the curve of the branches. The whole effect is ethereal and dreamlike. The hills 
+  easily roll down into the little village below. In contrast, the town is straight up and down, done with rigid lines 
+  that interrupt the flow of the brush strokes. Tiny little trees soften the inflexibility of the town. Bringing nature into the unnaturalness of buildings.
+One of the biggest points of interest about this painting is that it came entirely from Van Gogh’s imagination. 
+  None of the scenery matches the area surrounding Saint-Paul or the view from his window. As a man who religiously 
+  paints what he sees, it’s a remarkable break from Van Gogh’s normal work.
+The contrast in styles plays on the natural versus the unnatural, dreams versus reality. Nature could even be attributed
+  to the divine in this work. In Genesis 37:9, Joseph states, “And he dreamed yet another dream, and told it his brethren,
+  and said, Behold, I have dreamed a dream more; and behold the sun and the moon and the eleven stars made obeisance to me.” 
+  - predicting that one day his family would bow to him as an authority. Some people associate this quote to the painting.
+  Perhaps it is a reference to Van Gogh’s family, who doubted the success of his career (with the notable exception of his brother).
+  It could be that Van Gogh simply wanted to breathe in the higher power into his art, as he grew up in a religious household. 
+  Divide the painting into three parts. The sky is the divine. It is by far the most dreamlike, unreal part of the painting,
+  beyond human comprehension and just out of reach. Go down one level to the cypress, the hills, and the other trees on the ground. 
+  They bend and swirl, still soft angles that match the soft swirls of the sky. The last part is the village. The straight lines 
+  and sharp angles divide it from the rest of the painting, seemingly separating it from the “heavens” of the sky. However, note
+  the dots of trees rolled through the village, how the spire of the church stretches up to the sky. Van Gogh brings God to the village.  
+</p>
+  
+  <h3>Jump to other artworks!</h3>
+  
+  <a href="#sunflowers">Sunflowers</a><p>              </p>
+  <a href="#potatoeaters">The Potato Eaters</a><p>              </p>
+  <a href="#poppies">Poppies</a><p>              </p>
+  <a href="#Irises">Irises</a><p>              </p>
+  <a href="#bedroom">The Bedroom</a><p>              </p>
+  <a href="#almond">The Almond Tree</a><p>              </p>
+  <a href="#mulberry">The Mulberry Tree</a><p>              </p>
+  <a href="#nightcafe">The Night Cafe</a><p>              </p>
+  
+<div class="clearfix"></div>
+<hr>
+<h6 id="sunflowers">sunflowers</h6>
+<h2>Sunflowers</h2>
+<div class="zoom"><img src="https://cdn.glitch.com/b6dd32fe-7796-4b4f-b420-5fff9a958383%2Fsunflower_full.jpg?v=1607773395285" width="600" height="900" style="float:left; margin-right:20px; border: 2px solid black;"></div>
+<p>
+<h3>Description</h3>
+  There are pieces of artwork drifting through galleries around the world that have become nearly synonymous with the artists name and techniques.
+  The various paintings of Sunflowers and Vincent van Gogh are a perfect example of this. Not only can one make a mental connection between the artists
+  name and painting but also between the artist and their influence on the development of art through these paintings. Vincent van Gogh's Sunflower paintings 
+  have been duplicated many times by various artists (although never reaching the vivacity and intensity of Van Gogh's) and displayed everywhere; 
+  from households to art expos.
+  Upon looking at these paintings one begins to notice aspects that seem to flow from one piece to another. The colors are vibrant and express emotions 
+  typically associated with the life of sunflowers: bright yellows of the full bloom to arid Vase with Fifteen Sunflowers browns of wilting and death; 
+  all of the stages woven through these polar opposites are presented. Perhaps this very technique is what draws one into the painting; the fulfillment 
+  of seeing all angles of the spectrum of life and in turn reaching a deeper understanding of how all living things are tied together.
+</p>  
+<p>
+  Although Van Gogh's sunflower paintings are very similar in many aspects, each stands out as its own unique work of art. Van Gogh began painting sunflowers 
+  after he left Holland for France in pursuit of creating an artistic community. The firsts were created to decorate his friend Paul Gauguin's bedroom. The majority 
+  of Van Gogh's sunflowers in vases were created in Arles, France during 1888-1889. Van Gogh did create some sunflower paintings prior to this time though in Paris,
+  France around the time of 1887. This series consists of sunflower clippings verses sunflowers in vases.
+</p>
+<h3>Impact</h3>
+<p>
+  Regardless, Van Gogh's paintings of sunflowers have altered mankind's perspective of art and life. These paintings captivate the mind and leave you
+  astounded in their simplistic beauty. The flowing wilted steams and the burst of lovely yellow draws ones attention around the painting, without 
+  disrupting the balance of the piece. These paintings are often duplicated but never reach the pure power of Van Gogh's.  
+</p>
+<h3>Jump to other artworks!</h3>
+  <a href="#starrynights">The Starry Nights</a><p>              </p>
+  <a href="#potatoeaters">The Potato Eaters</a><p>              </p>
+  <a href="#poppies">Poppies</a><p>              </p>
+  <a href="#Irises">Irises</a><p>              </p>
+  <a href="#bedroom">The Bedroom</a><p>              </p>
+  <a href="#almond">The Almond Tree</a><p>              </p>
+  <a href="#mulberry">The Mulberry Tree</a><p>              </p>
+  <a href="#nightcafe">The Night Cafe</a><p>              </p>
+<div class="clearfix"></div>
+<hr>
+<h6 id="potatoeaters">The potato eaters</h6>
+<h2>The potato eaters</h2>
+<div class="zoom"><img src="https://cdn.glitch.com/b6dd32fe-7796-4b4f-b420-5fff9a958383%2Fpotato_full.jpg?v=1607768587013" width="600" height="450" style="float:left; margin-right:20px;border:2px solid black;"></div>
+<h3>Description</h3>
+<p>
+The Potato Eaters, completed in 1885, is considered by many to be Van Gogh's first great work of art. At the time of its creation, Van Gogh had only recently
+  started painting and had not yet mastered the techniques that would later make him famous. This could attribute to the interesting look of the piece as well 
+  as the overall feeling produced from the painting.  
+</p>
+<p>
+  Van Gogh wished to create his first masterpiece that could boost his reputation as a developed artist; his goal was to paint human figures that did not appear to be awkward,
+  but rather existing naturally. Portraying the figures in a dark room with light from an oil lamp, however, proved to be a bit too extreme for his newly acquired artistic skills.
+  The outcome of all of these factors, in turn, made the painting more appreciated in the art community then if Van Gogh had succeeded in his original task.
+</p>  
+<p>
+The painting that was completed consisted of 5 figures sitting around a square table eating potatoes; four of them are females and one male.
+  Although the piece is laced in darkness, the mixed emotions residing in the faces of the occupants shine out brightly. These figures are so
+  intense that one can nearly hear the conversations being spoken around the table. Perhaps this vibrancy layered with the darkness is what draws
+  one closer to examine the smaller details of the painting.   
+</p>  
+<p>
+Potato Eater Sketch These subtle aspects create the illusion that the building is an actual residence for the five figures.
+  This portrayal of ordinary peasant life did not come in a burst of creativity; Van Gogh had planned out the painting of The Potato Eaters 
+  far in advance, and had inspiration to create a multiple figure painting as far back as 1883. After completing various sketches and trial
+  paintings of the piece, Van Gogh sent reversed lithograph prints to two art dealers of the time and one of his fellow colleagues, while 
+  still planning to create a final draft of the sketch in paint. Van Gogh soon developed a sense of confidence that his finished painting 
+  would become an accurate interpretation of what he saw it as. Gogh began to advertise his finished painting before he had even begun it.  
+</p>
+<h3>Impact</h3>
+<p>
+Nevertheless The Potato Eaters failed to become the painting he had set his mind to. It was not successful in his life time,
+  nor was it displayed in Salon as Gogh had requested. Today the piece has reached great heights in the artistic community as 
+  well as being considered his first masterpiece, which is what he had intended it to be.  
+</p>
+<h3>Jump to other artworks!</h3>
+<a href="#starrynights">The Starry Nights</a><p>              </p>
+  <a href="#sunflowers">Sunflowers</a><p>              </p>
+  <a href="#poppies">Poppies</a><p>              </p>
+  <a href="#Irises">Irises</a><p>              </p>
+  <a href="#bedroom">The Bedroom</a><p>              </p>
+  <a href="#almond">The Almond Tree</a><p>              </p>
+  <a href="#mulberry">The Mulberry Tree</a><p>              </p>
+  <a href="#nightcafe">The Night Cafe</a><p>              </p>
+<div class="clearfix"></div>
+<hr>
+<h6 id="poppies">Poppies</h6>
+<h2>Poppies</h2>
+<div class="zoom"><img src="https://cdn.glitch.com/b6dd32fe-7796-4b4f-b420-5fff9a958383%2Fpoppies_full.jpeg?v=1607768587032" width="600" height="800" style="float:left; margin-right:20px; border: 2px solid black;"></div>
+<h3>Description</h3>
+<p>
+  The poppy flower is common to many Van Gogh Vase with Red Poppies countries but is often associated with the blooms covering expansive open fields
+  in the South of France. This image is likely ingrained in the subconscious due to the popularity of the many Van Gogh poppy field paintings.
+  Typically blooming in May and June, painting from what he saw in nature, Van Gogh poppies are were also late spring creations.
+</p>  
+<h3>The story of poppies</h3>
+<p>
+Between the years 1886 and 1890, Vincent van Gogh completed seven different paintings featuring poppy flowers. 
+  His earliest ones were done during his time in Paris mainly of cut flowers in vases such as Vase with Red Poppies,
+  1886 and Vase with Cornflowers and Poppies, 1887. Van Gogh did not have money to pay models, so still-life painting
+  became more practical. In a letter from 1886, Van Gogh wrote to the artist Horace M. Livens about how he put more 
+  emphasis on the colors in his paintings and how in using vibrant contrasting colors he is able to render life through color:
+“And now for what regards what I myself have been doing, I have lacked money for paying models else I had entirely given 
+  myself to figure painting. But I have made a series of colour studies in painting, simply flowers, red poppies, blue corn
+  flowers and myosotys, white and rose roses, yellow chrysanthemums-seeking oppositions of blue with orange, red and green, 
+  yellow and violet seeking les tons rompus et neutres to harmonize brutal extremes. Trying to render intense colour and not 
+  a grey harmony. Now alter these gymnastics I lately did two heads which I dare say are better in light and colour than those 
+  I did before. So as we said at the time: in colour seeking life the true drawing is modelling with colour.”  
+</p>  
+<p>
+A few years later in a letter to his sister Wilhelmina from June of 1888, Van Gogh wrote about his plans for using contrasting
+  Van Gogh Field with Poppies colors in his paintings of flowers. He used this technique in many of his poppy paintings with the
+  brilliant red of the poppy blooms against the bright green of alfalfa fields as in Field with Poppies, 1890:
+“And that furthermore in my own technique I have the same ideas about colour, even thought about them when I was still in Holland.
+  Cornflowers and white chrysanthemums and a certain number of marigolds - see here a motif in blue and orange. Heliotrope and yellow roses
+  - motif in lilac and yellow. Poppies or red geraniums in vigorously green leaves - motif in red and green.These are fundamentals, which one 
+  may subdivide further, and elaborate, but quite enough to show you without the help of a picture that there are colours which cause each other
+  to shine brilliantly, which form a couple, which complete each other like man and woman.”.  
+</p>  
+<h3>Impact</h3>
+<p>
+It was this use of complementary colors that Van Gogh became known for and which sets his paintings like Poppies and Butterflies, 1890 apart from other still-life works.  
+</p>
+<h3>Other variations of his poppies works can be seen here</h3>
+<a href="https://www.vangoghgallery.com/catalog/Painting/683/Vase%20with%20Red%20Poppies.html">Vases with red poppies, 1886</a><p>             </p>
+<a href="https://www.vangoghgallery.com/catalog/Painting/665/Vase%20with%20Cornflowers%20and%20Poppies.html">Vase with Cornflowers and Poppies, 1887</a><p>             </p>
+<a href="https://www.vangoghgallery.com/catalog/Painting/105/Edge%20of%20a%20Wheatfield%20with%20Poppies.html">Edge of Wheatfield and Poppies, 1887</a><p>             </p>
+<a href="https://www.vangoghgallery.com/catalog/Painting/134/Field%20with%20Poppies.html">Field with Poppies, 1889</a><p>             </p>
+<a href="https://www.vangoghgallery.com/catalog/Painting/450/Poppies%20and%20Butterflies.html">Poppies and Butterflies, 1890</a><p>             </p>
+<a href="https://www.vangoghgallery.com/catalog/Painting/133/Field%20with%20Poppies.html">Field with Poppies, 1890</a><p>             </p>
+<a href="https://www.vangoghgallery.com/catalog/Painting/581/Still%20Life:%20Red%20Poppies%20and%20Daisies.html">Still Life: Red Poppies and Daisies, 1890</a><p>             </p>
+<h3>Jump to other artworks!</h3>
+<a href="#starrynights">The Starry Nights</a><p>              </p>
+  <a href="#sunflowers">Sunflowers</a><p>              </p>
+  <a href="#potatoeaters">The Potato Eaters</a><p>              </p>
+  <a href="#Irises">Irises</a><p>              </p>
+  <a href="#bedroom">The Bedroom</a><p>              </p>
+  <a href="#almond">The Almond Tree</a><p>              </p>
+  <a href="#mulberry">The Mulberry Tree</a><p>              </p>
+  <a href="#nightcafe">The Night Cafe</a><p>              </p>
 
+<div class="clearfix"></div>
+<hr>
+<h6 id="Irises">Irises</h6>
+<h2>Irises</h2>
+<div class="zoom"><img src="https://cdn.glitch.com/b6dd32fe-7796-4b4f-b420-5fff9a958383%2Firises_full.jpeg?v=1607768602022"  width="600" height="450" style="float:left; margin-right:20px;border:2px solid black;"></div>
+<h3>Description</h3>
+<p>
+Some of the best known works of all time were painted by the Dutch Post-Impressionist artist, Vincent Willem Van Gogh (1853 -1890). Irises is among the most recognized of his pieces.  
+</p>
+<h3>The story of Irises</h3>
+<p>
+  On May 8, 1889, Vincent Van Gogh committed himself to the asylum at Saint Paul-de-Mausole in Saint-Remy, France after many instances 
+  of hospitalization and self-mutilation. During his stay he painted some 130 paintings with the surrounding gardens and clinic becoming 
+  his main subjects for painting. Among these were the famous The Starry Night and Irises.
+Inspired by the nature surrounding him, Van Gogh began his work on Irises within the first week of his stay at the asylum.
+  Irises was most likely influenced by Japanese woodblock prints which were produced beginning in the 17th century. Like many 
+  artists of his time Van Gogh was influenced by the Japanese works. The use of black contours in Irises is a typical element
+  of Japanese woodblock prints. It helped to reinforce the expressive power of the painting.
+There are no known drawings of the piece, probably because Van Gogh did not consider it a masterpiece but simply a study. 
+</p> 
+<p>
+  Upon receiving the canvas Van Gogh’s brother, Theo, submitted it, along with The Starry Night, to the Salon des Independants in September of 1889.
+Irises is on the list of the most expensive paintings ever sold, selling for 54 million dollars in 1987. Currently Irises is on display at The Getty 
+  Center in Los Angeles, California.
+</p>
+
+<div class="zoom"><img src="https://cdn.glitch.com/b6dd32fe-7796-4b4f-b420-5fff9a958383%2FStarry_Night_Over_the_Rhone.jpg?v=1605755791515" width="600" height="450" style="float:left ;margin-right:30px"></div>
+<h6>fillerfillerfillerfillerfillerfillerfillerfillerfillerfillerfillerfillerfillerfillerfillerfillerfillerfillerfiller</h6>
+<h3>On the left is an image of The Starry Night (another famous painting from Van Gogh)</h3>
+<h6>randomfillerrandomfiller</h6>
+<h6>randomfillerrandomfiller</h6>
+<h6>randomfillerrandomfiller</h6>
+
+
+<h3>Jump to other artworks!</h3>
+<a href="#starrynights">The Starry Nights</a><p>              </p>
+  <a href="#sunflowers">Sunflowers</a><p>              </p>
+  <a href="#potatoeaters">The Potato Eaters</a><p>              </p>
+  <a href="#poppies">Poppies</a><p>              </p>
+  <a href="#bedroom">The Bedroom</a><p>              </p>
+  <a href="#almond">The Almond Tree</a><p>              </p>
+  <a href="#mulberry">The Mulberry Tree</a><p>              </p>
+  <a href="#nightcafe">The Night Cafe</a><p>              </p>
+<div class="clearfix"></div>
+<hr>
+<h6 id="bedroom">The bedroom</h6>
+<h2>The Bedroom</h2>
+<div class="zoom"><img src="https://cdn.glitch.com/b6dd32fe-7796-4b4f-b420-5fff9a958383%2Fbedroom_full.jpeg?v=1607768571601" width="600" height="450" style="float:left; margin-right:20px;border:2px solid black;"></div>
+<h3>Description</h3>
+<p>
+ In the winter of 1888, Van Gogh traveled to a town in the south of France called Arles. There he hoped to start
+  a “Studio of the South” where painters could live and work together creating art in a region with more direct sunlight 
+  than Paris had and reminding Vincent of the landscape he admired in Japanese prints. The plan was for the artist Paul
+  Gauguin, who was a friend of Vincent and his art dealer brother Theo, to join Vincent in Arles. It took a long time for 
+  Gauguin to be convinced to go south giving Vincent plenty of time to get settled in and paint his surroundings, including his bedroom. 
+</p>
+<h3>Story behind The Bedroom</h3>
+<p>
+When Van Gogh first arrived in Arles, he found accommodations in a hotel, but he quickly found that expensive. 
+  It was cheaper and far more ideal for him to rent a house where he and another artist could eat, sleep, and paint. 
+  Eventually, he found what would become known as “the Yellow House.” It was a modest two-story building with a front
+  studio, back kitchen, and a few rooms upstairs. Being on a corner gave the house a slightly askew floor plan. The
+  front wall and sidewalls were not at ninety-degree angles; instead the front wall went diagonal to align with the street below.  
+</p>  
+<p>
+ Like many of Van Gogh’s phases of his life, this new venture in Arles filled him with hope and anticipation. When Gauguin agreed to go to Arles, 
+  Van Gogh wrote to him saying he was envious of Gauguin’s upcoming train journey saying, “How I watched out to see ‘if it was like Japan yet’! 
+  Childish, isn’t it?” You can imagine the joy that Van Gogh was feeling while he waited for his friend to join him. To prepare for Gauguin’s arrival,
+  Van Gogh and Gauguin exchanged letters and paintings. He also decorated the house with paintings of sunflowers and put the rooms together. 
+</p>
+<p>
+ On October 16th 1888, Vincent wrote to his brother describing a painting of his bedroom. Because of the simplicity of the subject matter and items in the bedroom, 
+  Van Gogh felt that the color needed to “do the job” of the painting. Van Gogh’s Bedroom, or Bedroom in Arles, painting is of a room where one sleeps, and he 
+  wanted the painting to put the viewer’s mind and imagination at rest. 
+</p>
+<p>
+  Upon entering the room, there is a bed to the right. Along the wall to the right is a chair, table with water on it, and a window overlooking the street. 
+  The wall on the left has another chair and the door to the second bedroom. Bedroom in Arles shows Van Gogh’s knowledge of color theory with oranges against blues, 
+  and red and greens. Inspired by the Japanese prints that Van Gogh studied, he omitted shadows from the picture. The lack of shadows, along with the distorted
+  perspective, makes some of the objects appear to be falling or not steady. This is not entirely a result of working fast or a lack of skill. The odd angle
+  of the far wall results in the furniture not aligning squarely.
+</p>
+<p>
+  Van Gogh must have liked the picture. In the letter to his brother he included a sketch of The Bedroom and then the very next day he wrote 
+  to Gauguin and included a sketch with that letter too! The painting he sent to his brother was damaged from a flood so he revisited the subject
+  and painted it again the next year when he was in Saint-Remy. Then, still wanting to explore the subject, painted a third version for his mother.
+  In all three paintings the composition is almost identical with minor changes to details and color.
+</p>
+<p>
+  Throughout Van Gogh’s career, he painted everything around him: landscapes, people in his town, or even the shoes he wore.
+  In Van Gogh’s Bedroom in Arles he shows a room in his house. This house, his Studio of the South, was supposed be the height
+  of his artistic vision. His painting of his bedroom was done with excitement and a hope for the future preparing to welcome
+  his friend and fellow artist.
+</p>
+<h3>Jump to other artworks!</h3>
+<a href="#starrynights">The Starry Nights</a><p>              </p>
+  <a href="#sunflowers">Sunflowers</a><p>              </p>
+  <a href="#potatoeaters">The Potato Eaters</a><p>              </p>
+  <a href="#poppies">Poppies</a><p>              </p>
+  <a href="#Irises">Irises</a><p>              </p>
+  <a href="#almond">The Almond Tree</a><p>              </p>
+  <a href="#mulberry">The Mulberry Tree</a><p>              </p>
+  <a href="#nightcafe">The Night Cafe</a><p>              </p>
+<div class="clearfix"></div>
+<hr>
+<h6 id="almond">almon</h6>
+<h2>Blossoming Almond Tree</h2>
+<div class="zoom"><img src="https://cdn.glitch.com/b6dd32fe-7796-4b4f-b420-5fff9a958383%2Fblossom_full.jpeg?v=1607768604654" width="600" height="450" style="float:left; margin-right:20px;border:2px solid black;"></div>
+<h3>Description</h3>
+<p>
+  Van Gogh’s life was full of new starts, changes of scenery, and ideas of things getting better. Often he would start something new convinced that 
+  once it worked out everything would be right. In early 1890, Vincent’s brother Theo had a son. Vincent was in great spirits saying “How glad I was
+  when the news came.” He reluctantly accepted the honor of having the new child named Vincent, after himself, and became the child’s godfather.
+</p>
+<p>
+  When Vincent moved to Arles, he dreamed of a new beginning where artists lived together and painted happily. At the Saint Paul Asylum in Saint-Remy, 
+  he thought he would get better after a year and be able to continue his life with new found success and happiness, and then with the birth of his nephew, 
+  he saw a new life to be celebrated. Immediately after finding about the healthy birth he began on a painting for the baby – Blossoming Almond Tree.
+  He wanted it to be hung above the bed in the parents’ and child’s room. Indeed, speaking of the child his brother’s wife wrote “He always looks 
+  with very great interest at Uncle Vincent’s paintings.” Van Gogh must have been very proud and filled with joy when thinking about his budding 
+  relationship with his nephew.
+</p>
+<h3>Story behind Blossoming Almond Tree</h3>
+<p>
+  Almond branches are a subject that Van Gogh visited a few times before. In earlier studies, he painted cut branches set in a vase 
+  – as a still life. In this picture, Blossoming Almond Tree, for his nephew, he paints a very different composition. Instead of visiting 
+  the still life again, he shows white almond tree branches against a blue sky. It is not shown whether these branches are cut from the 
+  tree and sitting in a vase outside of the view of the viewer or if they are still on the tree, seen from below looking up towards the sky.
+  It is an unusual composition for both art as a whole and for Van Gogh himself.
+</p>
+<p>
+  Like many of Van Gogh’s paintings, Blossoming Almond Tree has an influence from Japanese prints.
+  Van Gogh collected and admired Japanese artists and used ideas such as bold color, dark outlines, and the beauty of nature in his work.
+  Like pictures by the Japanese artist Hiroshige, Almond Tree shows the branches of a tree against the backdrop of a sky. This Japonisme
+  creates a dynamic and modern composition while still being a recognizably Van Gogh painting.
+</p>
+<p>
+  Van Gogh’s Blossoming Almond Tree, also referred to as Almond Tree, represents much of what Vincent often thought about: rebirth. 
+  Trees blooming and flowering announces the beginning of spring and new life. As a gift to celebrate the birth of a child,
+  this could not be more perfect. As soon as Van Gogh found out about the birth, he immediately thought to visit his brother in Paris.
+  Knowing that he was still trying to overcome his mental health issues, he was aware that a trip to a big city could be taxing. 
+  He hoped his time in the asylum would enable him to start again, feeling well. He often wrote that he felt better after being in the hospital.
+</p>
+<h3>Aftermath</h3>
+<p>
+  In May of 1890, he was able to leave Saint Paul’s in Saint-Remy and see his family; at this time he brought his painting of the almond tree. Unfortunately, 
+  his mental health continued to deteriorate, and he would die less than three months later in the summer of 1890.
+</p>
+<h3>Jump to other artworks!</h3>
+<a href="#starrynights">The Starry Nights</a><p>              </p>
+  <a href="#sunflowers">Sunflowers</a><p>              </p>
+  <a href="#potatoeaters">The Potato Eaters</a><p>              </p>
+  <a href="#poppies">Poppies</a><p>              </p>
+  <a href="#Irises">Irises</a><p>              </p>
+  <a href="#bedroom">The Bedroom</a><p>              </p>
+  <a href="#mulberry">The Mulberry Tree</a><p>              </p>
+  <a href="#nightcafe">The Night Cafe</a><p>              </p>
+<div class="clearfix"></div>
+<hr>
+<h6 id="mulberry">mulberri</h6>
+<h2>The Mulberry Tree</h2>
+<div class="zoom"><img src="https://cdn.glitch.com/b6dd32fe-7796-4b4f-b420-5fff9a958383%2Fmulberry_full.jpg?v=1607785303395" width="600" height="450" style="float:left; margin-right:20px;border:2px solid black;"></div>
+<h3>Description</h3>
+<p>
+  Van Gogh painted The Mulberry Tree in October of 1889 less than a year before he would die. Like most of his art, 
+  it was done during a period of highs and lows painted during a time of great self-awareness and yet surrounded by chaos.
+</p>
+<p>
+  Following a fight with his fellow artist Gauguin, during which the famous ear incident occurred, Van Gogh went to stay at the Saint Paul Asylum in Saint-Remy.
+  He was there for about a year, from May 1889 to May 1890. After the incident in Arles, his mental state declined. He became paranoid thinking people were trying
+  to poison him. While at Saint-Remy he wrote to his brother Theo about his state of mind, his new works, and the people around him. In the letters he acknowledges
+  that he has been in a bad place mentally, but that he feels he is getting better. Seeing all the other patients with similar issues made him feel like he was not alone.
+</p>
+<h3>Story behind The Mulberry Tree</h3>
+<p>
+  In Van Gogh’s Mulberry Tree we see a tree growing out of a rocky terrain. In early October 1889, he sent a few paintings, he called them studies, 
+  to his brother. In all the words describing this mulberry tree and the time he painted it he seems happy. In fact he writes “I’ll tell you that
+  we’re having some superb autumn days, and that I’m taking advantage of them.” In December he sends a few paintings to his brother in Paris, but
+  it is the Mulberry Tree that he says is his favorite.
+</p>
+<p>
+  The Mulberry Tree shows a tree from the garden of the asylum. It is centered on the canvas and is growing alone from a rocky hillside. 
+  The ground is made up of short quick brush strokes of white and pale browns. It creates a strong contrast to the dark green and brown of the tree trunk.
+  To the right, you see more greens, indicating trees and growth in the distance. The leaves of the tree make up the majority of the painting, orange against the complementary color of the blue sky.
+  It is that “superb autumn” that gave Vincent the bright orange leaves to paint. The ground and sky are made up of mostly straight diagonal brush strokes, while 
+  the tree leaves are made up of curling spirals of orange and black, sometimes done with the handle of his brush.
+</p>
+<p>
+  The Mulberry Tree by Van Gogh is a great example of his work and shows an interesting insight to his life. His bright colors show his interest in Impressionism, as this painting along with a few others was included in the Société des Artistes Indépendants show in 1890.
+  His life was dedicated to art, and his letters are almost entirely devoted to the subject. This painting shows his knowledge of color theory, his awareness
+  of the modern direction of painting, and his place in the world. No matter what was happening in his life, whether he was living in a house with a friend,
+  or a patient in a mental hospital, all Van Gogh could do was carry on and paint.
+</p>
+<h3>Jump to other artworks!</h3>
+<a href="#starrynights">The Starry Nights</a><p>              </p>
+  <a href="#sunflowers">Sunflowers</a><p>              </p>
+  <a href="#potatoeaters">The Potato Eaters</a><p>              </p>
+  <a href="#poppies">Poppies</a><p>              </p>
+  <a href="#Irises">Irises</a><p>              </p>
+  <a href="#bedroom">The Bedroom</a><p>              </p>
+  <a href="#almond">The almond Tree</a><p>              </p>
+  <a href="#nightcafe">The Night Cafe</a><p>              </p>
+<div class="clearfix"></div>
+<hr>
+<h6 id="nightcafe">nightcafe</h6>
+<h2>The Night Cafe</h2>
+<div class="zoom"><img src="https://cdn.glitch.com/b6dd32fe-7796-4b4f-b420-5fff9a958383%2Fcafe_full.jpeg?v=1607768598852" width="600" height="450" style="float:left; margin-right:20px;border:2px solid black;"></div>
+<h3>Description</h3>
+<p>
+  Night Café by Van Gogh was painted in September 1888 while he was living in Arles. Earlier in the year he had moved to a room at the 
+  Café de la Gare, where the room depicted in this painting was. Van Gogh stayed there for a few months over the summer while he furnished
+  what would become known as “The Yellow House”, where he would famously live with Gauguin for a brief time.
+</p>
+<p>
+In the center of the canvas Van Gogh shows a billiards table not being used. We see 3 walls of the room with a door opposite the viewer. 
+  The walls are lined with tables and chairs, some occupied by figures, hunched over the tables. Most of the six figures are men, but
+  there is a woman at one table. Standing close to the pool table, leaning on another table is a standing figure wearing white, the owner 
+  of the café. On the far wall by the door there is a bar with bottles on top and a vase of flowers in the center. Van Gogh’s exaggerated 
+  perspective creates disorienting angles and results with the majority of the painting being filled with the deep yellow floor. The walls 
+  are a rich red, contrasting with the yellow floors and yellow lights hanging from the ceiling.  
+</p>
+<h3>Story of The Night Cafe</h3>
+<p>
+  Van Gogh was interested in painting night scenes, as can be seen in his paintings of Starry Night and Café Terrace at Night. 
+  Today, we are lucky to know so much about Van Gogh’s paintings by the hundreds of letters that Vincent wrote. In one such letter, 
+  he said “the night is much more alive and richly colored than the day.” Prior to painting Night Café, Vincent wrote that he was
+  planning to paint the room and the “Night prowlers” as he called those that spent the nights there. Van Gogh was interested in these
+  people that stayed there because they “had no money to pay for a lodging, or are too drunk to be taken in.” He imagined that they saw 
+  themselves as travelers without a native land, and he himself imagined himself the same way. While he didn’t see himself like them,
+  he imagined having similar feelings.
+</p>
+<p>
+  In a letter to his brother, Van Gogh called the painting “the ugliest I’ve done” and gave it to Joseph Ginoux the owner of the café as 
+  payment for his room. His calling the painting ugly is also a description of the room and the feeling you get from it. In his description
+  of the painting, he uses words like “blood-red” to describe the color on the walls, “battle” to describe the contrast of reds and greens,
+  and refers to those in the room as “ruffians.” The harsh colors and disorienting perspective reflect the overall sadness, bitterness, and
+  loneliness, of those in the room. All of this adds up to an idea of if you are in this café at that late hour, something isn’t going right in your life.
+</p>
+<p>
+  Van Gogh spent three nights painting this room sleeping during the day. He saw this as showing “terrible human passions” and that one can
+  “ruin themselves” in a place like this café. Vincent didn’t praise this painting in his letters, but spoke of it in the same sentences as 
+  <a href="#potatoeaters">The Potato Eaters</a> and The Sower, two paintings that he was very proud of.
+</p>
+<h3>Jump to other artworks!</h3>
+<a href="#starrynights">The Starry Nights</a><p>              </p>
+  <a href="#sunflowers">Sunflowers</a><p>              </p>
+  <a href="#potatoeaters">The Potato Eaters</a><p>              </p>
+  <a href="#poppies">Poppies</a><p>              </p>
+  <a href="#Irises">Irises</a><p>              </p>
+  <a href="#bedroom">The Bedroom</a><p>              </p>
+  <a href="#almond">The almond Tree</a><p>              </p>
+  <a href="#mulberry">The Mulberry Tree</a><p>              </p>
+<div class="clearfix"></div>
+<hr>  
+<h1>Credits</h1>
+<h3>All paintings and sources of infomation are taken from<a href="https://www.vangoghgallery.com/painting/"> this website</a></h3>
+
+  
 </body>
 </html>

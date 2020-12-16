@@ -12,7 +12,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
     <!-- import the webpage's stylesheet -->
     <link rel="stylesheet" href="/style.css">
-    
+     <link rel="stylesheet" href="/index.css">
     <!-- import the webpage's javascript file -->
     <script src="/script.js" defer></script>
     
@@ -27,7 +27,10 @@
 body, html {
   height: 100%;
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family:'Raleway', sans-serif ;
+  background-image:url(https://cdn.glitch.com/b6dd32fe-7796-4b4f-b420-5fff9a958383%2Fimages.jpg?v=1608126635620);
+  background-repeat:repeat;
+  background-size:cover;
 }
 
 .hero-image {
@@ -37,6 +40,8 @@ body, html {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  
+  
 }
 
 .hero-text {
@@ -59,12 +64,14 @@ body, html {
   text-align: center;
   cursor: pointer;
   font-family: 'Raleway', sans-serif;
+  transition:0.8s;
 }
 
 .hero-text button:hover {
   background-color: #555;
   color: white;
 }
+  
 </style>
 </head>
 <body>
@@ -73,7 +80,9 @@ body, html {
   <div class="hero-text">
     <h1 class="ml2">Welcome!</h1>
     <p class="ml2">This website is dedicated to the famous artist Vincent Van Gogh</p>
-    <button>find out more</button>
+    <a href="#gallery">
+    <button style="transition:1s">Find out more</button>
+    </a>
   </div>
 </div>
 <!DOCTYPE html>
@@ -82,6 +91,7 @@ body, html {
 <style>
 body {
   font-size: 28px;
+  
 }
 
 ul {
@@ -89,7 +99,7 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: black;
+  background-color: #2F4F4F;
   position: sticky ;
   top: 0;
   
@@ -108,36 +118,48 @@ li a {
   font-family: 'Raleway', sans-serif;
   
 }
+li a::after{
+    content:'';
+    position:absoloute;
+    display:block;
+    height:5px;
+    width:0%;
+    background-color:white;
+    transition:all ease-in-out 250ms;
+  }  
 
-li a:hover {
-  background-color: pink;
+li a:hover::after {
+  background-color: magenta;
+  width:100%;
+  
 }
 
 .active {
-  background-color: #4CAF50;
+  background-color: teal;
 }
 </style>
 </head>
-<body>
+
 
 
 
 <ul>
-  <li><a class="active" href="#home">Home</a></li>
+  <li><a class="active" href="#home">Home page</a></li>
   <li><a href="famouspaintings.html">famous paintings</a></li> 
   <li><a href="Legacy.html">Legacy of the artist</a></li>
-  <li><a href="page4.html">Page 4</a></li>
-  <li><a href="indexver2.html">index ver 2 for test</a></li>
+  <li><a href="contactus.html">Contact Us</a></li>
+  
 </ul>
   
   <h1 style="font-size:50px ">Welcome to the Gallery of Vincent Van Gogh!</h1>
+  <hr>
   
-  <h2>About Vincent Van Gogh</h2> 
+  <h2 id="about">About Vincent Van Gogh</h2> 
   <style>
 img {
-  float: right;
+  float:;
   border: 1px solid black;
-  margin: -50px 50px 0px 30px;
+  
 }
      div.gallery {
   border: 1px solid magenta;
@@ -186,7 +208,8 @@ div.desc {
   clear: both;
 }
 </style>
-  <p><img src="https://cdn.glitch.com/b6dd32fe-7796-4b4f-b420-5fff9a958383%2FVincent_van_Gogh_-_Self-Portrait_-_Google_Art_Project_(454045).jpg?v=1606037248894" width="300" height="350">
+  <div class="zoom"><img src="https://cdn.glitch.com/b6dd32fe-7796-4b4f-b420-5fff9a958383%2FVincent_van_Gogh_-_Self-Portrait_-_Google_Art_Project_(454045).jpg?v=1606037248894" width="400" height="500" style="float:right;margin-right:70px;"></div>
+  <p style="margin-right:550px;margin-left:100px">
     Vincent Willem van Gogh (Dutch: [ˈvɪnsənt ˈʋɪləm vɑŋ ˈɣɔx] (About this soundlisten);[note 1] 30 March 1853 – 29 July 1890) was a Dutch post-impressionist painter who is among the most famous and influential figures
     in the history of Western art. In just over a decade, he created <b>about 2,100 artworks</b>, including <b>around 860 oil paintings</b>, most of which date from the last two years of his life. They include landscapes, still lifes,
     portraits and self-portraits, and are characterised by bold colours and dramatic, impulsive and expressive brushwork that contributed to the foundations of modern art. He was not commercially successful, and his suicide 
@@ -194,9 +217,9 @@ div.desc {
   </p>  
   
   
-  <b><p>A portrait of him can be seen on the right</p></b>
+  <b><p style="margin-right:550px;margin-left:100px">A portrait of him can be seen on the right</p></b>
   
-  <p>
+  <p style="margin-right:200px;margin-left:100px">
     Born into an upper-middle-class family, Van Gogh drew as a child and was serious, quiet, and thoughtful. As a young man he worked as an art dealer, often travelling, but became depressed after he was transferred to London.
     He turned to religion and spent time as a Protestant missionary in southern Belgium. He drifted in ill health and solitude before taking up painting in 1881, having moved back home with his parents. His younger brother Theo
     supported him financially, and the two kept a long correspondence by letter. His early works, mostly still lifes and depictions of peasant labourers, contain few signs of the vivid colour that distinguished his later work.
@@ -207,46 +230,179 @@ div.desc {
   <h2>Below are some of the famous artworks made by him. Check them out!</h2>
   <hr>
   <h2 id="gallery">The main gallery</h2>
- 
-  <h2>Gallery of his works</h2>
-
-
-<div class="responsive">
-  <div class="gallery">
-    <a target="_blank" href="img_5terre.jpg">
-      <img src="https://cdn.glitch.com/b6dd32fe-7796-4b4f-b420-5fff9a958383%2FStarry_Night_Over_the_Rhone.jpg?v=1605755791515" alt="Cinque Terre" width="600" height="400">
+  <h4 style="text-align:center">Hover over the paintings to find out more!</h4>
+  <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="https://cdn.glitch.com/b6dd32fe-7796-4b4f-b420-5fff9a958383%2Fstarry_night_full.jpg?v=1607768577320" alt="Avatar" style="width:450px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h2>The Starry Nights</h2> 
+      <p style="font-size:15px">Starry Night is one of the <b>most recognized pieces of art in the world</b>. It is absolutely everywhere, too. It can be seen on coffee, mugs,
+  t-shirts, towels, magnets, etc. Honestly, it sometimes feels as if the painting’s fame has exceeded that of its creator. It is a magnificent
+  piece of art. That Starry Night resonates with so many people is a testament to how its beauty is timeless and universal.</p> 
+      <a href="famouspaintings.html">
+    <button style="transition:1s;font-family:'Raleway', sans-serif">Find out more</button>
     </a>
-    <div class="desc">first painting?</div>
+    </div>
   </div>
 </div>
-
-
-<div class="responsive">
-  <div class="gallery">
-    <a target="_blank" href="img_forest.jpg">
-      <img src="https://cdn.glitch.com/b6dd32fe-7796-4b4f-b420-5fff9a958383%2Fjorg-angeli-CAMwIxYk5Xg-unsplash.jpg?v=1605750616684" alt="Forest" width="600" height="400">
+  
+   <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="https://cdn.glitch.com/b6dd32fe-7796-4b4f-b420-5fff9a958383%2Fsunflower_full.jpg?v=1607773395285" alt="Avatar" style="width:200px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h2>Sunflowers</h2> 
+      <p style="font-size:12px">There are pieces of artwork drifting through galleries around the world that have become nearly synonymous with the artists name and techniques.
+  The various paintings of Sunflowers and Vincent van Gogh are a perfect example of this. Not only can one make a mental connection between the artists
+  name and painting but also between the artist and their influence on the development of art through these paintings. Vincent van Gogh's Sunflower paintings 
+  have been duplicated many times by various artists (although never reaching the vivacity and intensity of Van Gogh's) and displayed everywhere; 
+  from households to art expos.</p> 
+      <a href="famouspaintings.html">
+    <button style="transition:1s;font-family:'Raleway', sans-serif">Find out more</button>
     </a>
-    <div class="desc">All these are placeholders</div>
+    </div>
   </div>
 </div>
-
-<div class="responsive">
-  <div class="gallery">
-    <a target="_blank" href="img_lights.jpg">
-      <img src="https://cdn.glitch.com/b6dd32fe-7796-4b4f-b420-5fff9a958383%2Fjorg-angeli-CAMwIxYk5Xg-unsplash.jpg?v=1605750616684" alt="Northern Lights" width="600" height="400">
+  
+   <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="https://cdn.glitch.com/b6dd32fe-7796-4b4f-b420-5fff9a958383%2Fpotato_full.jpg?v=1607768587013" alt="Avatar" style="width:450px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h2>The Potato Eaters</h2> 
+      <p style="font-size:15px">The Potato Eaters, completed in 1885, is considered by many to be Van Gogh's first great work of art. At the time of its creation, Van Gogh had only recently
+  started painting and had not yet mastered the techniques that would later make him famous. This could attribute to the interesting look of the piece as well 
+  as the overall feeling produced from the painting.  </p> 
+      <a href="famouspaintings.html">
+    <button style="transition:1s;font-family:'Raleway', sans-serif">Find out more</button>
     </a>
-    <div class="desc">Third placeholder</div>
+    </div>
   </div>
 </div>
-
-
-
-<div class="clearfix"></div>
+  
+  <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="https://cdn.glitch.com/b6dd32fe-7796-4b4f-b420-5fff9a958383%2Fpoppies_full.jpeg?v=1607768587032" alt="Avatar" style="width:250px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h2>Poppies</h2> 
+      <p style="font-size:15px"> The poppy flower is common to many Van Gogh Vase with Red Poppies countries but is often associated with the blooms covering expansive open fields
+  in the South of France. This image is likely ingrained in the subconscious due to the popularity of the many Van Gogh poppy field paintings.
+  Typically blooming in May and June, painting from what he saw in nature, Van Gogh poppies are were also late spring creations.</p> 
+      <a href="famouspaintings.html">
+    <button style="transition:1s;font-family:'Raleway', sans-serif">Find out more</button>
+    </a>
+    </div>
+  </div>
+</div>
+  
+   <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="https://cdn.glitch.com/b6dd32fe-7796-4b4f-b420-5fff9a958383%2Firises_full.jpeg?v=1607768602022" alt="Avatar" style="width:450px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h2>Irises</h2> 
+      <p style="font-size:15px"> On May 8, 1889, Vincent Van Gogh committed himself to the asylum at Saint Paul-de-Mausole in Saint-Remy, France after many instances 
+  of hospitalization and self-mutilation. During his stay he painted some 130 paintings with the surrounding gardens and clinic becoming 
+  his main subjects for painting. Among these were the famous The Starry Night and Irises.</p> 
+      <a href="famouspaintings.html">
+    <button style="transition:1s;font-family:'Raleway', sans-serif">Find out more</button>
+    </a>
+    </div>
+  </div>
+</div>
+  
+   <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="https://cdn.glitch.com/b6dd32fe-7796-4b4f-b420-5fff9a958383%2Fbedroom_full.jpeg?v=1607768571601" alt="Avatar" style="width:450px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h2>The Bedroom</h2> 
+      <p style="font-size:12px">In the winter of 1888, Van Gogh traveled to a town in the south of France called Arles. There he hoped to start
+  a “Studio of the South” where painters could live and work together creating art in a region with more direct sunlight 
+  than Paris had and reminding Vincent of the landscape he admired in Japanese prints. The plan was for the artist Paul
+  Gauguin, who was a friend of Vincent and his art dealer brother Theo, to join Vincent in Arles. It took a long time for 
+  Gauguin to be convinced to go south giving Vincent plenty of time to get settled in and paint his surroundings, including his bedroom.  </p> 
+      <a href="famouspaintings.html">
+    <button style="transition:1s;font-family:'Raleway', sans-serif">Find out more</button>
+    </a>
+    </div>
+  </div>
+</div>
+  
+    <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="https://cdn.glitch.com/b6dd32fe-7796-4b4f-b420-5fff9a958383%2Fblossom_full.jpeg?v=1607768604654" alt="Avatar" style="width:250px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h2>The Almond Tree</h2> 
+      <p style="font-size:12px"> Almond branches are a subject that Van Gogh visited a few times before. In earlier studies, he painted cut branches set in a vase 
+  – as a still life. In this picture, Blossoming Almond Tree, for his nephew, he paints a very different composition. Instead of visiting 
+  the still life again, he shows white almond tree branches against a blue sky. It is not shown whether these branches are cut from the 
+  tree and sitting in a vase outside of the view of the viewer or if they are still on the tree, seen from below looking up towards the sky.
+  It is an unusual composition for both art as a whole and for Van Gogh himself.</p> 
+      <a href="famouspaintings.html">
+    <button style="transition:1s;font-family:'Raleway', sans-serif">Find out more</button>
+    </a>
+    </div>
+  </div>
+</div>
+  
+   <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="https://cdn.glitch.com/b6dd32fe-7796-4b4f-b420-5fff9a958383%2Fmulberry_full.jpg?v=1607785303395" alt="Avatar" style="width:250px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h2>The Mulberry Tree</h2> 
+      <p style="font-size:15px"> Van Gogh painted The Mulberry Tree in October of 1889 less than a year before he would die. Like most of his art, 
+  it was done during a period of highs and lows painted during a time of great self-awareness and yet surrounded by chaos.</p> 
+      <a href="famouspaintings.html">
+    <button style="transition:1s;font-family:'Raleway', sans-serif">Find out more</button>
+    </a>
+    </div>
+  </div>
+</div>
+  
+   <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="https://cdn.glitch.com/b6dd32fe-7796-4b4f-b420-5fff9a958383%2Fcafe_full.jpeg?v=1607768598852" alt="Avatar" style="width:450px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h2>The NightCafe</h2> 
+      <p style="font-size:15px">Night Café by Van Gogh was painted in September 1888 while he was living in Arles. Earlier in the year he had moved to a room at the 
+  Café de la Gare, where the room depicted in this painting was. Van Gogh stayed there for a few months over the summer while he furnished
+  what would become known as “The Yellow House”, where he would famously live with Gauguin for a brief time. </p> 
+      <a href="famouspaintings.html">
+    <button style="transition:1s;font-family:'Raleway', sans-serif">Find out more</button>
+    </a>
+    </div>
+  </div>
+</div>
+  
+  <div class="clearfix"></div>
+  <a href="#about"><h3 text align="middle">jump back to the top to explore more!</h3></a>
   
 
 
 
-  </body>
+
+
+
+  
+
+
+
+  
 </html>
 
 

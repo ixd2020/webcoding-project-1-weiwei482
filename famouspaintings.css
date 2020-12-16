@@ -3,3 +3,94 @@ h3 {
   color: ;
   text-align:center;
 }
+h6{
+  opacity:0%;
+}
+body{
+  background-image:url(https://cdn.glitch.com/b6dd32fe-7796-4b4f-b420-5fff9a958383%2Fimages.jpg?v=1608126635620);
+  background-size:cover;
+  background-repeat:repeat;
+}
+.zoom {
+  padding: 30px;
+  background-color: ;
+  transition: transform .2s;
+  width: px;
+  height: px;
+  margin: 2 auto;
+}
+.zoom:hover {
+  transform: scale(1.10); 
+}
+.box {
+  float: left;
+  width: 300px;
+  padding: 30px;
+  height: 300px;
+  
+}
+.threecol{
+  width: 27%;
+  border: 1px solid white;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.blackbox {
+  background-color:black;
+  overflow: auto;
+  body {
+  font-size: 28px;
+  font-family:'Raleway', sans-serif;
+}  
+  
+a:link {
+  color: blue;
+}
+
+/* visited link */
+a:visited {
+  color: pink;
+}
+
+/* mouse over link */
+a:hover {
+  color: red;
+}
+
+/* selected link */
+a:active {
+  color: yellow;
+}     
+.ml2 {
+  font-weight: 900;
+  font-size: 70px;
+}
+
+.ml2 .letter {
+  display: inline-block;
+  line-height: 1em;
+}  
+  
+.ml9 {
+  position: relative;
+  font-weight: 200;
+  font-size: 40px;
+}
+
+.ml9 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.2em;
+  padding-right: 0.05em;
+  padding-bottom: 0.1em;
+  overflow: hidden;
+}
+
+.ml9 .letter {
+  transform-origin: 50% 100%;
+  display: inline-block;
+  line-height: 1em;
+}
